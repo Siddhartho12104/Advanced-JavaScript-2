@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advanced JavaScript2 Q3</title>
+</head>
+<body bgcolor="grey">
+	<script type="text/javascript">
+				
+		function Vehicle_Details(){
+			var wheel=prompt("Enter number of wheels")
+			this.wheel=wheel;
+			var model=prompt("Enter vehicle name" );
+			this.model=model;
+			var year=prompt("Enter vehicle year" );
+			this.year=year;
+			var number=prompt("vehicle year" );
+			this.number=number;
+			var colour=prompt("Enter vehicle colour" );
+			this.colour=colour;
+		}
+		
+		function calling(){
+			var vehicle = new Vehicle_Details();
+			document.write(" The vehicle has " + vehicle.wheel + " wheels" + "<br>");
+       		document.write(" Vehicle name is : " + vehicle.model + "<br>");
+			document.write(" Year of vehicle is : " + vehicle.year + "<br>");
+			document.write(" Vehicle number is : " +  vehicle.number + "<br>");
+			document.write(" Vehicle colour is : " +  vehicle.colour + "<br>");
+		}
+				
+	
+	</script>
+
+	<button onclick="calling()"> Enter vehicle information </button>
+	
+</body>
+</html>

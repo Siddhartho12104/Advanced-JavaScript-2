@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advanced JavaScript 2 Q2</title>
+	<script type="text/javascript">
+	(function(){
+						var num1=prompt("Enter first number","");
+						var num2=prompt("Enter second number","");
+						function addition(num1, num2)
+						{
+							this.addValue = parseInt(num1) + parseInt(num2);
+							return addValue;
+						}
+						function subtract(num1, num2)
+						{
+							this.subValue = num1 - num2;
+							return subValue;
+						}
+						function product(num1, num2)
+						{
+							this.prod = num1 * num2;
+							return prod;
+						}
+						function division(num1, num2)
+						{
+							if (num2 != 0){
+								this.quotient = num1/num2;
+								return quotient;
+							}
+							else
+								return "undefined ";
+						}
+						alert("The sum of the numbers is " + addition(num1,num2));
+						alert("The difference of the numbers is " + subtract(num1,num2));
+						alert("The product of the numbers is " + product(num1,num2));
+						alert("The quotient of the numbers is " + division(num1,num2));
+		})();
+</script>
+</head>
+
+<body onload="">
+
+</body>
+</html>

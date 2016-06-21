@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<title>Advanced JavaScript Q4</title>
+	<script type="text/javascript">
+					function person(fname, lname, age, degree)
+					{
+						this.fname=fname;
+						this.lname=lname;
+						this.age=age;
+						this.degree=degree;
+					}
+
+					function student()
+					{
+
+					}
+
+					person.prototype.college='IIIT-Delhi';
+					var p1=new person('Siddhartho','Das','22','B.Tech');	
+					document.write("Person's degree is " + p1.degree + "<br>");	
+					
+					student.prototype=p1;
+					student.prototype.degree='M.Tech';
+					document.write("Student's degree is " + student.prototype.degree);
+ 	</script>
+</head>
+<body>
+
+</body>
+</html>
